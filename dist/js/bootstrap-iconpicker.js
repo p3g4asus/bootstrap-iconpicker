@@ -51,6 +51,7 @@
         octicon: $.iconset_octicon || Iconpicker.ICONSET_EMPTY,
         typicon: $.iconset_typicon || Iconpicker.ICONSET_EMPTY,
         weathericon: $.iconset_weathericon || Iconpicker.ICONSET_EMPTY
+        googleicon: $.iconset_googleicon || Iconpicker.ICONSET_EMPTY
     };
 
     // ICONPICKER DEFAULTS

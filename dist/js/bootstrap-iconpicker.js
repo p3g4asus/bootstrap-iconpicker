@@ -50,8 +50,8 @@
         materialdesign: $.iconset_materialdesign || Iconpicker.ICONSET_EMPTY,
         octicon: $.iconset_octicon || Iconpicker.ICONSET_EMPTY,
         typicon: $.iconset_typicon || Iconpicker.ICONSET_EMPTY,
-        weathericon: $.iconset_weathericon || Iconpicker.ICONSET_EMPTY
-        googleicon: $.iconset_googleicon || Iconpicker.ICONSET_EMPTY
+        weathericon: $.iconset_weathericon || Iconpicker.ICONSET_EMPTY,
+        google: $.iconset_googleicon || Iconpicker.ICONSET_EMPTY
     };
 
     // ICONPICKER DEFAULTS
@@ -165,10 +165,10 @@
                 el.find('i').attr('class', '').addClass(op.iconClass).addClass(icon);
             }
             if(icon === op.iconClassFix){
-                el.trigger({ type: "change", icon: 'empty' });
+                el.trigger({ type: "change", icon: 'empty', iclass:op.iconClass });
             }
             else {
-                el.trigger({ type: "change", icon: icon });
+                el.trigger({ type: "change", icon: icon, iclass:op.iconClass });
                 el.find('input').val(icon);
             }
             op.table.find('button.' + op.selectedClass).removeClass(op.selectedClass);
